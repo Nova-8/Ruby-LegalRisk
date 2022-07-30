@@ -1,0 +1,13 @@
+<h1>test</h1>
+
+<% if @num.nil? %>
+    <p>invalid integer</p>
+<% else %>
+    <p><%= @num %> is even?: <strong><%= @res %></strong></p>
+<% end %>
+
+<%= form_with url: root_path, method: :get do |form| %>
+    <%= form.text_field :query %>
+    <%= form.submit "Check" %>
+<% end %>
+
