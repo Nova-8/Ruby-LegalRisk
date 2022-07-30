@@ -1,9 +1,9 @@
-<h1>test</h1>
+<h1>Check if your number is even!</h1>
 
-<% if @num.nil? %>
-    <p>invalid integer</p>
+<% if @query.nil? %>
+    <p>Please enter a number:</p>
 <% else %>
-    <p><%= @num %> is even?: <strong><%= @res %></strong></p>
+    <p><%= @query %> is even?: <strong><%= @res %></strong></p>
 <% end %>
 
 <%= form_with url: root_path, method: :get do |form| %>
